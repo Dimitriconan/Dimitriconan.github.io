@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arkhip', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+p {
+    text-transform: uppercase;
+    text-align: center;
+}
+/* ***************** NAVBAR ************************* */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e59866 ;
+    align-items: center;
+    color: white;
+}
+
+.brand-tittle {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toogle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toogle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .toogle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+/* *********** IMAGE PRINCIPAL ************* */
+#imageprincipal {
+    padding-top: 60px;
+    background: url(Media/3693162.jpg) no-repeat fixed 10% 10%;
+    background-size: cover;
+    height: 799px;
+}
+#texteintro {
+    font-family: 'BRUSHSTRIKE';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 9rem;
+    margin-top: 110px;
+    text-shadow: 5px 6px 4px black;
+}
+@media only screen and (max-width: 480px) {
+    #texteintro {
+    font-size: 3em;
+    }
+    }
+
+    
+@media only screen and (max-width: 480px) {
+    #extensions {
+     font-size: 0.5em;
+    }
+    }
+
+@media only screen and (max-width: 480px) {
+    #onglenaturel {
+     font-size: 0.5em;
+    }
+    }
+
+@media only screen and (max-width: 480px) {
+    #pied {
+     font-size: 0.5em;
+    }
+    }
+
+@media only screen and (max-width: 480px) {
+    #txtpresta {
+     font-size: 2em;
+    }
+    }
+
+@media only screen and (max-width: 480px) {
+    #txtgalerie {
+     font-size: 2em;
+    }
+    }
+
+@media only screen and (max-width: 480px) {
+    #txtcontact {
+     font-size: 2em;
+    }
+    }
+
+@media only screen and (max-width: 480px) {
+    #po {
+     font-size: 1.5em;
+    }
+    }
+    
+#premiertrait {
+    width: 180px;
+    height: 4px;
+    background:  #d63f3f ;
+    margin: 60px auto;
+    
+}
+h3 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+}
+/* ************* PRESTATION *********** */
+h1 {
+    font-family: 'Arkhip', sans-serif;
+    text-align: center;
+    color: rgb(92, 69, 69);
+    font-size: 6em;
+    
+}
+#prestation {
+    background-color:   #e59866  ;
+    padding: 10px 0px 100px 0;
+}
+#extensions {
+    margin: 5%;
+}
+#onglenaturel {
+    margin: 5%;
+}
+#intro {
+    padding: 0px 20%;
+}
+
+/* ******************* GALERIE *********************** */
+
+.gallery-section {
+    width: 100%;
+    padding: 60px 0;
+    background:  #f8c471 ;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gallery-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.border{
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+}
+
+.gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+    transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:960px) {
+    .gallery-section .image{
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery-section .image{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .gallery-section .image{
+        flex: 100%;
+    }
+}
+
+/* **************** CONTACT ************** */
+
+
+
+#contact {
+    width: 100%;
+    padding: 60px;
+    margin:none;
+    background:  #e59866
+    ;
+}
+
